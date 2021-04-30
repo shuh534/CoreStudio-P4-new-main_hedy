@@ -1,0 +1,128 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P4</title>
+    <!-- add reset to create consistency between browsers and devices. -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- add link to your javascript. be sure it includes "defer" -->
+    <script type="text/javascript" src="script.js" defer></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+      
+    <body onload="InitThis();">
+        <br>
+        <br>
+        
+           
+       <div class="intro">
+           Click on the buttons and move your mouse to create your own drawing
+       </div>
+       <br>
+       <br>
+       <button onclick= "addShape()">Drop Square </button>
+       <br>
+       <br>
+       <div align="left">
+        <button onclick="javascript:clearArea();return false;">Clear Area</button>
+        Line width : <select id="selWidth">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="9" selected="selected">9</option>
+            <option value="11">11</option>
+        </select>
+        Color : <select id="selColor">
+            <option value="black">black</option>
+            <option value="blue" selected="selected">blue</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="yellow">yellow</option>
+            <option value="gray">gray</option>
+        </select>
+       <br>
+       <br>
+       <button onclick = "Corange()"> 
+        Change to orange
+    </button>
+
+    <button onclick = "Cgreen()"> 
+        Change to green
+    </button>
+
+    <button onclick = "Cpink()"> 
+        Change to pink
+    </button>
+
+    <button onclick = "Cgrey()"> 
+        Change to grey
+    </button>
+
+    <button onclick = "Cwhite()"> 
+        Change to white
+    </button>
+
+       <br>
+       <canvas id="canvas1" width="1300" height="500" style="border:1px solid white;">
+        This text is displayed if your browser does not support HTML5 Canvas.
+       </canvas>
+      
+       
+       <br>
+    
+        <br>
+        <canvas id="myCanvas" width="1300" height="500" style="border:2px solid white"></canvas>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+       
+
+          
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+            var str = "Click on button to change the background color";
+          
+            el_up.innerHTML = str;
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+            function Corange() {
+                changeColor('orange');
+                el_down.innerHTML = "Background Color changed";
+            }   
+            
+            function Cgreen() {
+                changeColor('green');
+                el_down.innerHTML = "Background Color changed";
+            } 
+
+            function Cpink() {
+                changeColor('pink');
+                el_down.innerHTML = "Background Color changed";
+            } 
+
+            function Cgrey() {
+                changeColor('grey');
+                el_down.innerHTML = "Background Color changed";
+            } 
+            function Cwhite() {
+                changeColor('white');
+                el_down.innerHTML = "Background Color changed";
+            } 
+        </script> 
+    
+
+
+            
+    </body> 
+</html>                    

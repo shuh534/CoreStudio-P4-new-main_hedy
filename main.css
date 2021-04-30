@@ -1,0 +1,30 @@
+.body{
+    margin-left: 100px;
+    align-items: left;
+}
+
+#canvas {
+    width:2000px;
+    height:2000px;
+    border: 10px solid transparent;
+}
+.rectangle {
+    border: 1px solid #FF0000;
+    position: absolute;
+}
+
+.can{
+    align-self: left;
+}
+
+.position{
+    align-items: baseline;
+}
+
+.intro{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
